@@ -1,0 +1,4 @@
+This is my way of finally structuring my dotfiles,
+starting with my .vimrc file and favorite vim plugins.
+This project is intended for personal use,
+hence most configs/scripts will only work under Ubuntu.
