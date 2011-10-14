@@ -33,27 +33,11 @@ if has('gui_running')
 	                    "                        in my .gvimrc)
 	set columns=100 lines=38 " Default window size
 
-	if has('mac') " Macvim-only options
-		set fuoptions=maxvert,maxhorz
-	endif
-elseif has('mac')
-	" Enable "+y (copy to clipboard) on OS X
-	vno <silent> "+y :<c-u>cal<SID>Copy()<cr>
-	vm "+Y "+y
-	fun s:Copy()
-		let old = @"
-		norm! gvy
-		call system('pbcopy', @")
-		let @" = old
-	endf
-endif
-
 " Indentation
 filetype plugin indent on
 set ai ts=4 sw=4
 
 " Theme
-set t_Co=16 " Enable 16 colors in Terminal
 syntax on
 color slate " My color scheme, adopted from TextMate
 set hls " Highlight search terms
@@ -69,20 +53,6 @@ let python_highlight_numbers = 1
 let python_highlight_exceptions = 1
 
 " Correct some spelling mistakes
-ia teh the
-ia htis this
-ia tihs this
-ia eariler earlier
-ia funciton function
-ia funtion function
-ia fucntion function
-ia retunr return
-ia reutrn return
-ia foreahc foreach
-ia !+ !=
-ca eariler earlier
-ca !+ !=
-ca ~? ~/
 
 " Mappings
 let mapleader = ','

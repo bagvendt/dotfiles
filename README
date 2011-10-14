@@ -1,4 +1,7 @@
-This is my way of finally structuring my dotfiles,
-starting with my .vimrc file and favorite vim plugins.
-This project is intended for personal use,
-hence most configs/scripts will only work under Ubuntu.
+This is my way of finally structuring my dotfiles, starting with my .vimrc file and favorite vim plugins.
+This project is intended for personal use, hence most configs/scripts will only work under Ubuntu.
+
+Thanks:
+
+github.com/scrooloose - nerdtree
+github.com/msanders - snipmate, colorsceme slate, and most of the settings from .vimrc
